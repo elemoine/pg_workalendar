@@ -1,0 +1,7 @@
+# workalendar extension
+comment = 'workalendar extension'
+default_version = '1.0.0'
+relocatable = false
+superuser = false
+schema = 'workalendar'
+requires = 'plpython3u'
