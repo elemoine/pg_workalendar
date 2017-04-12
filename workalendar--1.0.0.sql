@@ -15,12 +15,13 @@ CREATE TYPE holiday AS (
     name text
 );
 
-CREATE OR REPLACE FUNCTION holidays(year int)
+CREATE OR REPLACE FUNCTION holidays(year int, continent text, country text)
   RETURNS SETOF holiday AS
 $BODY$
     from datetime import date
-    from workalendar.europe import France
-    cal = France()
+    from importlib import import_module
+    imp = import_module('workalendar.' + continent)
+    cal = getattr(imp, country)()
     for holiday in cal.holidays(year):
         yield holiday
 $BODY$

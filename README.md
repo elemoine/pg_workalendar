@@ -24,10 +24,10 @@ Activate virtual env if `workalendar` was installed in a virtual env:
 SELECT workalendar.workon('/patch/to/virtual/env');
 ```
 
-Get the french holidays for a given year:
+Get the french holidays for 2017:
 
 ```sql
-SELECT * from workalendar.holidays(2017);
+SELECT * from workalendar.holidays(2017, 'europe', 'France');
     date    |             name
 ------------+------------------------------
  2017-01-01 | New year
