@@ -6,6 +6,12 @@ Install the `workalendar` Python package:
 $ pip install workalendar   # may be installed in a virtual env
 ```
 
+Install the `workalendar` extension:
+
+```shell
+$ sudo make install
+```
+
 Create extension in database:
 
 ```sql
