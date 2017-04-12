@@ -20,7 +20,7 @@ SELECT workalendar.workon('/patch/to/virtual/env');
 
 Get the french holidays for a given year:
 
-```
+```sql
 SELECT * from workalendar.holidays(2017);
     date    |             name
 ------------+------------------------------
