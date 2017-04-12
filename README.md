@@ -1,5 +1,10 @@
 # Workalendar PostgreSQL extension
 
+`pg_workalendar` is a plpythonu-based PostgreSQL extension for
+[workalendar](https://github.com/novafloss/workalendar).
+
+## Installation
+
 Install the `workalendar` Python package:
 
 ```shell
@@ -12,6 +17,8 @@ Install the `workalendar` extension:
 $ cd pg_workalendar
 $ sudo make install
 ```
+
+## Usage
 
 Create extension in database:
 
