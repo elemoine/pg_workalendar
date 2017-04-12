@@ -9,6 +9,7 @@ $ pip install workalendar   # may be installed in a virtual env
 Install the `workalendar` extension:
 
 ```shell
+$ cd pg_workalendar
 $ sudo make install
 ```
 
